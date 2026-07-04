@@ -166,3 +166,16 @@ body {
     border-radius: 5px;
     scroll-behavior: smooth;
 }
+
+/* This rule only applies to screens that are 768px wide or smaller (mobile/tablets) */
+@media (max-width: 768px) {
+    .worksimage {
+        height: 140px; /* Scales down the image height on mobile */
+        gap: 12px;     /* Optional: shrinks the gap between images a bit */
+    }
+    
+    .myworkscontainer2 {
+        gap: 12px;     /* Matches the tighter spacing for the container */
+        padding: 10px; /* Optional: reduces padding inside the container on small screens */
+    }
+}
