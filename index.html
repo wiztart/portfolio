@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wiztart's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+
+    <body>
+        <center>
+        <div class="headerdiv">
+        <p>&nbsp;</p>
+        <img class="logo" src="wiztart.png" alt="wiztart">
+            <h1 class="maintext">Welcome to my portfolio!</h1>
+            <h2 class="maintext">I'm mainly a designer in Figma and Affinity, and a Blender 3D artist, but I also make some other stuff.</h2>
+            <p>&nbsp;</p>
+        </div>
+        <p>&nbsp;</p>
+            <div class="myworkscontainer">
+                <h2 class="maintext">My Works</h2>
+            <div class="myworkscontainer2">
+
+
+
+
+                <!-- 🔸ADD NEW IMAGES HERE🔸 -->
+
+                <img class="worksimage" src="works/18.png">
+                <img class="worksimage" src="works/17.png">
+                <img class="worksimage" src="works/16.png">
+                <img class="worksimage" src="works/15.png">
+                <img class="worksimage" src="works/14.png">
+                <img class="worksimage" src="works/13.png">
+                <img class="worksimage" src="works/12.png">
+                <img class="worksimage" src="works/11.png">
+                <img class="worksimage" src="works/10.png">
+                <img class="worksimage" src="works/9.png">
+                <img class="worksimage" src="works/8.png">
+                <img class="worksimage" src="works/7.png">
+                <img class="worksimage" src="works/6.png">
+                <img class="worksimage" src="works/5.png">
+                <img class="worksimage" src="works/4.png">
+                <img class="worksimage" src="works/3.png">
+                <img class="worksimage" src="works/2.png">
+                <img class="worksimage" src="works/1.png">
+
+
+
+
+
+
+            </div>
+                <p></p>
+            </div>
+        </center>
+        <div class="footerinfo">
+            <div class="bar"></div>
+            <p>&nbsp;</p>
+            <p class="maintext2">Important note: Some things in this portfolio are only made out of boredom, and aren't actually used and/or have been requested. Also, <b><i>I'm not a professional</i></b>, so don't expect me to make the most complex renders and designs. This is just a little hobby of mine, and I don't get paid for this.</p>
+            <p>&nbsp;</p>
+            <h3 class="maintext2"><b>A list of platforms and games I actually make/made stuff for:</b></h3>
+            <p class="maintext2">
+            - Luduvo: Contributor - I made some graphic designs and a logo animation. <br>
+            - Kitbash: Graphic designer and 3D render artist <br>
+            - Cave Game (Polytoria game): Logos/icons designer, graphic designer (and I'm a staff too) <br>
+            - The epic library of epicness (Polytoria game): Contributor - I made the Discord server/Polytoria guild icon and the game icon <br>
+            - Untitled Timebomb Game (Roblox game): 3D render artist <br>
+            </p>
+            <p>&nbsp;</p>
+            <h2 class="maintext2">
+                <img src="discord.png" alt="Discord" width="50" style="vertical-align: middle;"> @wiztart
+            </h2>
+        </div>
+    </body>
+
+<script>
+    const container = document.querySelector('.myworkscontainer2');
+
+    container.addEventListener('wheel', (event) => {
+        // Prevent the default vertical page scroll
+        event.preventDefault();
+        
+        // Move the container horizontally instead
+        container.scrollLeft += event.deltaY;
+    });
+</script>
+</body>
+</html>

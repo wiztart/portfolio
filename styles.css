@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    /* Sets the minimum height to 100% of the screen height */
+    min-height: 100vh; 
+    
+    background-image: linear-gradient(45deg, #6b009c, #020292);
+    
+    /* Prevents the gradient from repeating or cutting off when scrolling */
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+.maintext {
+    position: relative;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    z-index: 1;
+    text-shadow: 0px 0px 5px #000000;
+}
+
+.maintext2 {
+    position: relative;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.footerinfo {
+    position: relative;
+    padding: 25px;
+}
+
+.bar {
+  position: relative;
+  width: 97%;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+
+.logo {
+    position: relative;
+    display: block;
+    width: 30%;
+    max-width: 400px;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #000000);
+    filter: drop-shadow(0px 0px 5px #000000);
+}
+
+.discordicon {
+    position: relative;
+    display: block;
+    width: 30%;
+    max-width: 400px;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.homebuttons {
+    position: relative;
+    background-color:white;
+    width: 280px;
+    padding: 10px 2px;
+    box-sizing: border-box;
+    border-style: none;
+    font-size: 150%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.smallhomebuttons {
+    position: relative;
+    background-color:white;
+    width: 137px;
+    height: 53px;
+    box-sizing: border-box;
+    border-style: none;
+    font-size: 130%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.myworkscontainer {
+    position: relative;
+    background-color: rgb(25, 0, 95); 
+    border-width: 0px;
+    border-style: solid;
+    padding: 10px;
+    width: 85%;
+    max-width: 3000px;
+    border-radius: 6px;
+    -webkit-filter: drop-shadow(5px 5px 5px #ffffff);
+    filter: drop-shadow(0px 0px 5px #fdfdfd);
+}
+
+.myworkscontainer2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;       /* Centers images vertically */
+    overflow-x: auto;          /* Enables horizontal scrolling */
+    white-space: nowrap;       /* Prevents images from breaking into a new line */
+    gap: 20px;                 /* Adds clean spacing between your works */
+    padding: 20px;             /* Gives some breathing room inside the box */
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.headerdiv {
+    background-image: url("banner.png");
+
+    /* 1. Tell the image to scale nicely and cover the whole area */
+    background-size: cover; 
+    
+    /* 2. Keep the image centered so the cool parts don't get cut off */
+    background-position: center; 
+    
+    /* 3. Stop the image from tiling/repeating if the window gets huge */
+    background-repeat: no-repeat;
+
+    -webkit-filter: drop-shadow(5px 5px 5px #000000);
+    filter: drop-shadow(0px 0px 5px #000000);
+}
+
+.worksimage {
+    height: 200px;         /* Set your preferred fixed height here */
+    width: auto;           /* Crucial: lets the width scale naturally based on the image aspect ratio */
+    flex-shrink: 0;        /* Prevents flexbox from squeezing the images horizontally */
+    object-fit: contain;   /* Ensures the image renders cleanly without clipping */
+    border-radius: 5px;
+    scroll-behavior: smooth;
+}
