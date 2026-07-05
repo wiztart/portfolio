@@ -124,6 +124,7 @@ body {
     white-space: nowrap;       /* Prevents images from breaking into a new line */
     gap: 20px;                 /* Adds clean spacing between your works */
     padding: 20px;             /* Gives some breathing room inside the box */
+    scrollbar-width: thin;
 }
 
 .hvr-grow {
