@@ -1,16 +1,11 @@
 body {
     margin: 0;
-    /* Sets the minimum height to 100% of the screen height */
     min-height: 100vh; 
-    
     background-image: linear-gradient(45deg, #6b009c, #020292);
-    
-    /* Prevents the gradient from repeating or cutting off when scrolling */
     background-attachment: fixed;
     background-size: cover;
 
 }
-
 
 .maintext {
     position: relative;
@@ -63,15 +58,6 @@ body {
     filter: drop-shadow(0px 0px 5px #000000);
 }
 
-.discordicon {
-    position: relative;
-    display: block;
-    width: 30%;
-    max-width: 400px;
-    min-width: 320px;
-    height: auto;
-    margin: 0 auto;
-}
 
 .homebuttons {
     position: relative;
@@ -119,11 +105,11 @@ body {
 .myworkscontainer2 {
     display: flex;
     flex-direction: row;
-    align-items: center;       /* Centers images vertically */
-    overflow-x: auto;          /* Enables horizontal scrolling */
-    white-space: nowrap;       /* Prevents images from breaking into a new line */
-    gap: 20px;                 /* Adds clean spacing between your works */
-    padding: 20px;             /* Gives some breathing room inside the box */
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 20px;
+    padding: 20px;
     scrollbar-width: thin;
 }
 
@@ -138,32 +124,44 @@ body {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active { 
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
 .headerdiv {
     background-image: url("banner.png");
-
-    /* 1. Tell the image to scale nicely and cover the whole area */
     background-size: cover; 
-    
-    /* 2. Keep the image centered so the cool parts don't get cut off */
     background-position: center; 
-    
-    /* 3. Stop the image from tiling/repeating if the window gets huge */
     background-repeat: no-repeat;
+}
 
-    -webkit-filter: drop-shadow(5px 5px 5px #000000);
-    filter: drop-shadow(0px 0px 5px #000000);
+.wipe-animation {
+    -webkit-mask-image: linear-gradient(to right, black 45%, transparent 55%);
+
+    mask-image: linear-gradient(to right, black 46%, transparent 55%);
+
+    -webkit-mask-size: 200% 100%;
+    mask-size: 300% 100%;
+
+    -webkit-mask-position: 100% 0;
+    mask-position: 85% 0;
+
+    animation: wipeReveal 1s ease-in-out forwards;
+}
+
+@keyframes wipeReveal {
+  100% {
+    -webkit-mask-position: 0% 0;
+    mask-position: 0% 0;
+  }
 }
 
 .worksimage {
-    height: 200px;         /* Set your preferred fixed height here */
-    width: auto;           /* Crucial: lets the width scale naturally based on the image aspect ratio */
-    flex-shrink: 0;        /* Prevents flexbox from squeezing the images horizontally */
-    object-fit: contain;   /* Ensures the image renders cleanly without clipping */
+    height: 200px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
     border-radius: 5px;
     scroll-behavior: smooth;
 }
@@ -171,8 +169,25 @@ body {
   .fade-up {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeUp 0.8s ease-out forwards;
+    animation: fadeUp 0.7s ease-out forwards;
+    animation-delay: 0.4s;
   }
+
+  .fade-and-grow {
+  animation: fadeInGrow 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInGrow {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
   @keyframes fadeUp {
     to {
@@ -180,16 +195,38 @@ body {
       transform: translateY(0);
     }
   }
+
+  /*
+Source - https://stackoverflow.com/a/39669911
+Posted by DigitalDesignDj
+Retrieved 2026-07-07, License - CC BY-SA 3.0
+*/
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
   
-/* This rule only applies to screens that are 768px wide or smaller (mobile/tablets) */
 @media (max-width: 768px) {
     .worksimage {
-        height: 140px; /* Scales down the image height on mobile */
-        gap: 12px;     /* Optional: shrinks the gap between images a bit */
+        height: 140px;
+        gap: 12px;
     }
     
     .myworkscontainer2 {
-        gap: 12px;     /* Matches the tighter spacing for the container */
-        padding: 10px; /* Optional: reduces padding inside the container on small screens */
+        gap: 12px;
+        padding: 10px;
     }
 }
