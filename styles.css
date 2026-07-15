@@ -59,36 +59,6 @@ body {
 }
 
 
-.homebuttons {
-    position: relative;
-    background-color:white;
-    width: 280px;
-    padding: 10px 2px;
-    box-sizing: border-box;
-    border-style: none;
-    font-size: 150%;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 500;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 5px;
-}
-
-.smallhomebuttons {
-    position: relative;
-    background-color:white;
-    width: 137px;
-    height: 53px;
-    box-sizing: border-box;
-    border-style: none;
-    font-size: 130%;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 500;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 3px;
-}
-
 .myworkscontainer {
     position: relative;
     background-color: rgb(25, 0, 95); 
@@ -214,9 +184,12 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
   font-family: "Open Sans";
   font-weight: 600;
   padding: 10px 30px;
+  padding-bottom: 7px;
   font-size: 22px;
   cursor: pointer;
-  background-color: white;
+  background: linear-gradient(to bottom, #00ff37, #82ff7e); 
+  -webkit-filter: drop-shadow(5px 5px 5px #00ff00);
+  filter: drop-shadow(0px 0px 5px #02ff02);
   border-style: none;
   border-radius: 5px;
   color: black;
@@ -229,11 +202,14 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
   padding: 7px 20px;
   font-size: 22px;
   cursor: pointer;
-  background-color: rgb(0, 255, 55);
+  background: linear-gradient(to bottom, #00ff37, #82ff7e); 
+  -webkit-filter: drop-shadow(5px 5px 5px #00ff00);
+  filter: drop-shadow(0px 0px 5px #02ff02);
   border-style: none;
   border-radius: 5px;
   color: black;
   text-decoration: none;
+  float: right;
 }
 
 .video {
