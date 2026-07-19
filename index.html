@@ -10,9 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="icon.png">
 </head>
-
-
     <body>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('animation') === 'false') {
+                document.documentElement.classList.add('no-animations');
+            }
+        </script>
+
         <center>
         <div class="headerdiv wipe-animation">
             <br><br>
@@ -21,6 +26,7 @@
             <h2 class="maintext fade-up">I'm mainly a designer in Figma and Affinity, and a Blender render artist.</h2>
             <p>&nbsp;</p>
         </div>
+        <div class="header-div-shadow wipe-animation"></div>
         <p>&nbsp;</p>
             <div class="myworkscontainer fade-and-grow">
                 <h2 class="maintext">My Works</h2>
@@ -58,7 +64,7 @@
             </div>
                 <br>
                 <a href="extra.html">
-                <button class="button-small hvr-grow">More Stuff <img src="arrow-right-solid-full.svg" alt="Back" width="30" height="29" style="vertical-align: middle; padding-bottom: 4px;"></button>
+                <button class="more-stuff-button hvr-grow">More Stuff <img src="arrow-right-solid-full.svg" alt="Back" width="30" height="29" style="vertical-align: middle; padding-bottom: 4px;"></button>
                 </a>
                 <p style="font-size: 16px;">&nbsp;</p>
 
@@ -67,16 +73,15 @@
         <div class="footerinfo">
             <div class="bar wipe-animation"></div>
             <p>&nbsp;</p>
-            <p class="maintext2 fade-in">Important note: Some things in this portfolio are only made out of boredom, and aren't actually used and/or have been requested. Also, <b><i>I'm not a professional</i></b>, so don't expect me to make the most complex renders and designs. This is just a little hobby of mine, and I don't get paid for this.</p>
+            <p class="maintext2 fade-in">Important note: Some things in this portfolio are only made out of boredom, and aren't actually used and/or have been requested. Also, <b><i>I'm not a professional</i></b>, so I don't make the most complex renders and designs. This is just a little hobby of mine, and I don't get paid for this.</p>
             <p>&nbsp;</p>
-            <h3 class="maintext2 fade-in"><b>A list of platforms and games I actually make/made stuff for:</b></h3>
-            <p class="maintext2 fade-in">
-            - Luduvo: Contributor - I made some graphic designs and a logo animation. <br>
-            - Kitbash: Graphic designer and 3D render artist <br>
-            - Cave Game (Polytoria game): Logos/icons designer, graphic designer (and I'm a staff too) <br>
-            - The epic library of epicness (Polytoria game): Contributor - I made the Discord server/Polytoria guild icon and the game icon <br>
-            - Untitled Timebomb Game (Roblox game): 3D render artist <br>
-            </p>
+            <h3 class="maintext2 fade-in"><b>A list of platforms and games I make/made stuff for:</b></h3>
+
+            <p class="maintext2 fade-in">• Luduvo: Contributor - I made some graphic designs and a logo animation.<br></p>
+            <p class="maintext2 fade-in">• Kitbash'd: Contributor - I made an updated wordmark (for the name transition from Kitbash to Kitbash'd), and a Discord server banner.<br></p>
+            <p class="maintext2 fade-in">• Cave Game (Polytoria game): Logos/icons designer, graphic designer (and I'm a staff too) <br></p>
+            <p class="maintext2 fade-in">• The epic library of epicness (Polytoria game): Contributor - I made the Discord server/Polytoria guild icon and the game icon <br></p>
+            <p class="maintext2 fade-in">• Untitled Timebomb Game (Roblox game): 3D render artist <br></p>
             <p>&nbsp;</p>
             <h3 class="maintext2 fade-in">Do you want to work with me? DM me on Discord:</h3>
             <h2 class="maintext2 fade-in">
