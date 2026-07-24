@@ -11,79 +11,107 @@
     <link rel="icon" type="image/x-icon" href="icon.png">
 </head>
     <body>
-        <script>
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get('animation') === 'false') {
-                document.documentElement.classList.add('no-animations');
-            }
-        </script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        if (urlParams.get('animation') === 'false' || urlParams.get('vscode-livepreview') === 'true') {
+            document.documentElement.classList.add('no-animations');
+        }
+    </script>
 
-        <center>
         <div class="headerdiv wipe-animation">
             <br><br>
         <img class="logo fade-up" src="wiztart.png" alt="wiztart">
             <h1 class="maintext fade-up">Welcome to my portfolio!</h1>
             <h2 class="maintext fade-up">I'm mainly a designer in Figma and Affinity, and a Blender render artist.</h2>
-            <p>&nbsp;</p>
+            <p style="font-size: 4px">&nbsp;</p>
         </div>
-        <div class="header-div-shadow wipe-animation"></div>
-        <p>&nbsp;</p>
-            <div class="myworkscontainer fade-and-grow">
-                <h2 class="maintext">My Works</h2>
-            <div class="myworkscontainer2">
+
+        <div class="contributions-section wipe-animation-2">
+            <h1 class="maintext fade-in" style="padding-left: 0px;">My Contributions</h1>
+
+            <div class="contribution-cards-container fade-and-grow">
+
+
+
+                <div class="contribution-card"><h2 class="contribution-card-text">Luduvo
+                    <i class="contribution-card-text-italic">(UGC sandbox platform)</i>
+                    <h3 class="contribution-card-text-2">2 banner designs and Discord role icons</h3></h2></div>
+
+                <div class="contribution-card"><h2 class="contribution-card-text">Polytoria
+                    <i class="contribution-card-text-italic">(UGC sandbox platform)</i>
+                    <h3 class="contribution-card-text-2">A Discord server sticker</h3></h2></div>
+
+                <div class="contribution-card"><h2 class="contribution-card-text">Kitbash'd
+                    <i class="contribution-card-text-italic">(UGC sandbox platform)</i>
+                    <h3 class="contribution-card-text-2">A banner design and an updated wordmark</h3></h2></div>
+
+                <div class="contribution-card"><h2 class="contribution-card-text">Untitled Timebomb Game
+                    <i class="contribution-card-text-italic">(Roblox game)</i>
+                    <h3 class="contribution-card-text-2">Icon design for “Having fun yet?” badge, and a thumbnail render</h3></h2></div>
+
+                <div class="contribution-card"><h2 class="contribution-card-text">The epic library of epicness
+                    <i class="contribution-card-text-italic">(Polytoria game)</i>
+                    <h3 class="contribution-card-text-2">2 icon designs and a thumbnail render</h3></h2></div>
+
+                <div class="contribution-card"><h2 class="contribution-card-text">Cave Game
+                    <i class="contribution-card-text-italic">(Polytoria game)</i>
+                    <h3 class="contribution-card-text-2">2 icon designs</h3></h2></div>
+
+                <div class="contribution-card"><h2 class="contribution-card-text">Luduvo Files
+                    <i class="contribution-card-text-italic">(Google Sheets project)</i>
+                    <h3 class="contribution-card-text-2">Logo design</h3></h2></div>
+
+            </div>
+        </div>
+
+
+            <div class="my-works-section">
+                <h1 class="maintext fade-in">My Works</h1>
+                <h3 class="maintext2 fade-in">Some of the stuff here is only made out of boredom/to test my skill and add to my portfolio, and aren't actual contributions that are/were used and/or requested.<br><h3 class="maintext fade-in">Actual contributions will be highlighted in yellow.</h3>
+                </h3>
+                
+            <div class="my-works-container fade-and-grow">
 
 
 
 
-                <!-- ADD NEW IMAGES HERE -->
-                <img class="worksimage" src="works/22.webp">
+                <img class="highlighted-worksimage" src="works/22.webp">
                 <img class="worksimage" src="works/21.webp">
-                <img class="worksimage" src="works/20.webp">
+                <img class="highlighted-worksimage" src="works/20.webp">
                 <img class="worksimage" src="works/19.webp">
-                <img class="worksimage" src="works/18.webp">
-                <img class="worksimage" src="works/17.webp">
-                <img class="worksimage" src="works/16.webp">
+                <img class="highlighted-worksimage" src="works/18.webp">
+                <img class="highlighted-worksimage" src="works/17.webp">
+                <img class="highlighted-worksimage" src="works/16.webp">
                 <img class="worksimage" src="works/15.webp">
                 <img class="worksimage" src="works/14.webp">
                 <img class="worksimage" src="works/13.webp">
-                <img class="worksimage" src="works/12.webp">
-                <img class="worksimage" src="works/11.webp">
+                <img class="highlighted-worksimage" src="works/12.webp">
+                <img class="highlighted-worksimage" src="works/11.webp">
                 <img class="worksimage" src="works/10.webp">
                 <img class="worksimage" src="works/9.webp">
-                <img class="worksimage" src="works/8.webp">
-                <img class="worksimage" src="works/7.webp">
+                <img class="highlighted-worksimage" src="works/8.webp">
+                <img class="highlighted-worksimage" src="works/7.webp">
                 <img class="worksimage" src="works/6.webp">
-                <img class="worksimage" src="works/5.webp">
+                <img class="highlighted-worksimage" src="works/5.webp">
                 <img class="worksimage" src="works/4.webp">
-                <img class="worksimage" src="works/3.webp">
-                <img class="worksimage" src="works/2.webp">
-                <img class="worksimage" src="works/1.webp">
+                <img class="highlighted-worksimage" src="works/3.webp">
+                <img class="highlighted-worksimage" src="works/2.webp">
+                <img class="highlighted-worksimage" src="works/1.webp">
 
 
 
  
             </div>
                 <br>
-                <a href="extra.html">
-                <button class="more-stuff-button hvr-grow">More Stuff <img src="arrow-right-solid-full.svg" alt="Back" width="30" height="29" style="vertical-align: middle; padding-bottom: 4px;"></button>
-                </a>
-                <p style="font-size: 16px;">&nbsp;</p>
-
+                <div style="padding-right: 15px; padding-bottom: 15px;">
+                    <a href="extra.html">
+                    <button class="more-stuff-button hvr-grow">Extra Stuff <img src="arrow-right-solid-full.svg" alt="Back" width="30" height="29" style="vertical-align: middle; padding-bottom: 4px;"></button>
+                    </a>
+                    <p style="font-size: 16px;">&nbsp;</p>
+                </div>
             </div>
-        </center>
         <div class="footerinfo">
-            <div class="bar wipe-animation"></div>
-            <p>&nbsp;</p>
-            <p class="maintext2 fade-in">Important note: Some things in this portfolio are only made out of boredom, and aren't actually used and/or have been requested. Also, <b><i>I'm not a professional</i></b>, so I don't make the most complex renders and designs. This is just a little hobby of mine, and I don't get paid for this.</p>
-            <p>&nbsp;</p>
-            <h3 class="maintext2 fade-in"><b>A list of platforms and games I make/made stuff for:</b></h3>
-
-            <p class="maintext2 fade-in">• Luduvo: Contributor - I made some graphic designs and a logo animation.<br></p>
-            <p class="maintext2 fade-in">• Kitbash'd: Contributor - I made an updated wordmark (for the name transition from Kitbash to Kitbash'd), and a Discord server banner.<br></p>
-            <p class="maintext2 fade-in">• Cave Game (Polytoria game): Logos/icons designer, graphic designer (and I'm a staff too) <br></p>
-            <p class="maintext2 fade-in">• The epic library of epicness (Polytoria game): Contributor - I made the Discord server/Polytoria guild icon and the game icon <br></p>
-            <p class="maintext2 fade-in">• Untitled Timebomb Game (Roblox game): 3D render artist <br></p>
-            <p>&nbsp;</p>
             <h3 class="maintext2 fade-in">Do you want to work with me? DM me on Discord:</h3>
             <h2 class="maintext2 fade-in">
                 <img src="discord.png" alt="Discord" width="50" style="vertical-align: middle; padding-bottom: 2.3px;" class="fade-in"> @wiztart
@@ -91,16 +119,5 @@
         </div>
     </body>
 
-<script>
-    const container = document.querySelector('.myworkscontainer2');
-
-    container.addEventListener('wheel', (event) => {
-        // Prevent the default vertical page scroll
-        event.preventDefault();
-        
-        // Move the container horizontally instead
-        container.scrollLeft += event.deltaY;
-    });
-</script>
 </body>
 </html>

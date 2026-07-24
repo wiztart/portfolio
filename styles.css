@@ -1,10 +1,9 @@
 body {
     margin: 0;
     min-height: 100vh; 
-    background-image: linear-gradient(45deg, #6b009c, #020292);
+    background-image: linear-gradient(45deg, #35004e, #130153);
     background-attachment: fixed;
-    background-size: cover;
-
+    background-size: cover;   
 }
 
 .maintext {
@@ -16,8 +15,8 @@ body {
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
-    z-index: 1;
     text-shadow: 0px 0px 5px #000000;
+    padding-left: 19px;
 }
 
 .maintext2 {
@@ -29,11 +28,75 @@ body {
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
+    padding-left: 19px;
 }
 
 .footerinfo {
     position: relative;
-    padding: 25px;
+    background-image: linear-gradient(45deg, #6b009c, #020292);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.contribution-card {
+    background-color: #0000008e;
+    width: fit-content;
+    padding-left: 18px;
+    padding-right: 25px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.contributions-section {
+    padding-left: 20px;
+    padding-bottom: 21px;
+    padding-top: 1px;
+    background-image: linear-gradient(45deg, #6b009c, #029262);
+    display: block;
+    margin-top: 0; /* Ensures absolutely no top margin is inherited */
+}
+
+.contribution-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust this value to change the spacing */
+}
+
+.contribution-card-text {
+    position: relative;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-shadow: 0px 0px 5px #000000;
+}
+
+.contribution-card-text-2 {
+    position: relative;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.contribution-card-text-italic {
+    position: relative;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-shadow: 0px 0px 5px #000000;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .bar {
@@ -53,34 +116,25 @@ body {
     max-width: 400px;
     min-width: 320px;
     height: auto;
-    margin: 0 auto;
+    padding-left: 15px;
     -webkit-filter: drop-shadow(5px 5px 5px #000000);
     filter: drop-shadow(0px 0px 5px #000000);
 }
 
 
-.myworkscontainer {
-    position: relative;
+.my-works-section {
     background-color: rgb(25, 0, 95); 
-    border-width: 0px;
-    border-style: solid;
-    padding: 10px;
-    width: 85%;
-    max-width: 3000px;
-    border-radius: 6px;
-    -webkit-filter: drop-shadow(5px 5px 5px #ffffff);
-    filter: drop-shadow(0px 0px 5px #fdfdfd);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 12px;
 }
 
-.myworkscontainer2 {
+.my-works-container {
+    padding-top: 7px;
+    padding-left: 20px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 20px;
-    padding: 20px;
-    scrollbar-width: thin;
+    flex-wrap: wrap;
+    gap: 15px; /* Adjust this value to change the spacing */
 }
 
 .hvr-grow {
@@ -108,14 +162,6 @@ body {
     overflow: hidden; /* Prevents internal margins from pushing out the bottom */
 }
 
-.header-div-shadow {
-    background: linear-gradient(to bottom, #00000052, #00000000);
-    width: 100%;
-    height: 20px;
-    display: block;
-    margin-top: 0; /* Ensures absolutely no top margin is inherited */
-}
-
 .wipe-animation {
     -webkit-mask-image: linear-gradient(to right, black 45%, transparent 55%);
 
@@ -128,6 +174,30 @@ body {
     mask-position: 85% 0;
 
     animation: wipeReveal 1s ease-in-out forwards;
+}
+
+.wipe-animation-2 {
+    -webkit-mask-image: linear-gradient(to right, transparent 45%, black 55%);
+    mask-image: linear-gradient(to right, transparent 45%, black 55%);
+
+    -webkit-mask-size: 200% 100%;
+    mask-size: 300% 100%;
+
+    -webkit-mask-position: 0% 0;
+    mask-position: 0% 0;
+
+    animation: wipeRevealRightToLeft 1s ease-in-out forwards;
+}
+
+@keyframes wipeRevealRightToLeft {
+  0% {
+    -webkit-mask-position: 0% 0;
+    mask-position: 0% 0;
+  }
+  100% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @keyframes wipeReveal {
@@ -147,8 +217,25 @@ body {
     width: auto;
     flex-shrink: 0;
     object-fit: contain;
-    border-radius: 5px;
     scroll-behavior: smooth;
+}
+
+.highlighted-worksimage {
+    height: 200px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    scroll-behavior: smooth;
+    box-shadow: 0 0 5px 4.5px #eeff00;
+}
+
+.blue-highlighted-worksimage {
+    height: 200px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    scroll-behavior: smooth;
+    box-shadow: 0 0 5px 4.5px #00ccff;
 }
 
 .fade-up {
@@ -197,7 +284,7 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 0.5s;
+	animation-duration: 0.8s;
 }
 
 .back-button {
@@ -211,7 +298,6 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
   -webkit-filter: drop-shadow(5px 5px 5px #00ff00);
   filter: drop-shadow(0px 0px 5px #02ff02);
   border-style: none;
-  border-radius: 5px;
   color: black;
   text-decoration: none;
 }
@@ -226,7 +312,6 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
   -webkit-filter: drop-shadow(5px 5px 5px #00ff00);
   filter: drop-shadow(0px 0px 5px #02ff02);
   border-style: none;
-  border-radius: 5px;
   color: black;
   text-decoration: none;
   float: right;
@@ -257,7 +342,8 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
   
 @media (max-width: 768px) {
     .worksimage {
-        height: 140px;
+        max-height: 80%;
+        max-width: 95%;
         gap: 12px;
     }
     
@@ -273,3 +359,25 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
       height: auto;
     }
 }
+
+@media (max-width: 768px) {
+    .contribution-card {
+      padding-left: 13px;
+      padding-right: 13px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    .contribution-card-text {
+      font-size: 17px;
+    }
+
+    .contribution-card-text-2 {
+      font-size: 15px;
+    }
+
+    .contribution-card-text-italic {
+      font-size: 14px;
+    }
+  }
+
