@@ -34,7 +34,7 @@ body {
 
 .footerinfo {
     position: relative;
-    background-image: linear-gradient(45deg, #6b009c, #020292);
+    background-image: linear-gradient(45deg, #020292, #6b009c);
     padding-top: 1px;
     padding-bottom: 1px;
 }
@@ -171,6 +171,14 @@ body {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
+
+.no-animations .hvr-grow {
+  -webkit-transition-duration: 0.3s !important;
+  transition-duration: 0.3s !important;
+  -webkit-transition-property: transform !important;
+  transition-property: transform !important;
+}
+
 
 .headerdiv {
     background-image: url("banner.png");
@@ -351,18 +359,15 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
 
 }
 
-.animatedstuffcontainer {
-  padding-left: 16px;
+.highlighted-video {
+  box-shadow: 0 0 5px 4.5px #eeff00;
 }
 
-.scroll-fade-in {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.scroll-fade-in.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+.extra-stuff-container {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Adjust this value to change the spacing */
 }
 
 .no-animations, 
