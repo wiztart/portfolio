@@ -417,17 +417,17 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
   
 @media (max-width: 768px) {
     .mwimage {
-      height: 186px;
+      height: 176px;
       width: auto;
     }
 
     .h-mwimage {
-      height: 186px;
+      height: 176px;
       width: auto;
     }
 
     .wide-mwimage {
-      height: 145px;
+      height: 135px;
       width: auto;
     }
 
@@ -445,6 +445,7 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
         gap: 12px;
         padding: 10px;
         padding-left: 19px;
+
     }
 
 
