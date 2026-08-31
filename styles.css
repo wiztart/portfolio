@@ -80,7 +80,7 @@ body {
     padding-right: 23px;
 }
 
-.contribution-card-text {
+.ctbcard-text {
     position: relative;
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -93,7 +93,7 @@ body {
     font-size: 17px;
 }
 
-.contribution-card-text-2 {
+.ctbcard-text-3 {
     position: relative;
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -105,7 +105,7 @@ body {
     font-size: 13px
 }
 
-.contribution-card-text-italic {
+.ctbcard-text-2 {
     position: relative;
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -466,15 +466,15 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
       padding-bottom: 0px;
     }
 
-    .contribution-card-text {
+    .ctbcard-text {
       font-size: 17px;
     }
 
-    .contribution-card-text-2 {
+    .ctbcard-text-3 {
       font-size: 15px;
     }
 
-    .contribution-card-text-italic {
+    .ctbcard-text-2 {
       font-size: 14px;
     }
   }
