@@ -122,11 +122,9 @@ body {
 
 .bar {
   position: relative;
-  width: 96%;
-  height: 2px;
-  background-color: #ffffff;
-  margin: 10px auto;
-  border-radius: 2px;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff56;
   margin-top: 30px;
 }
 
@@ -282,7 +280,27 @@ body {
     flex-shrink: 0;
     object-fit: contain;
     scroll-behavior: smooth;
-    box-shadow: 0 0 5px 4.5px #eeff00;
+    box-shadow: 0 0 3px 2.8px #eeff00;
+}
+
+.h-icon-mwimage {
+    height: 107px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    scroll-behavior: smooth;
+    box-shadow: 0 0 5px 2.8px #eeff00;
+}
+
+.h-wmargin-icon-mwimage {
+    height: 90px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    scroll-behavior: smooth;
+    box-shadow: 0 0 5px 2.8px #eeff00;
+    padding-inline: 7px;
+    padding-block: 7px;
 }
 
 .blue-highlighted-worksimage {
@@ -291,7 +309,7 @@ body {
     flex-shrink: 0;
     object-fit: contain;
     scroll-behavior: smooth;
-    box-shadow: 0 0 5px 4.5px #00ccff;
+    box-shadow: 0 0 5px 2.8px #00ccff;
 }
 
 .fade-up {
