@@ -34,6 +34,14 @@ body {
     padding-right: 15px;
 }
 
+.wiztart-name {
+    color: rgb(0, 255, 0);
+    font-weight: 770;
+    margin-top: 0px;
+    margin-bottom: -20px;
+    font-size: 520%;
+    margin-left: -5px;
+}
 .discord-username-section {
     position: relative;
     background-image: linear-gradient(180deg, #000000, #033442);
@@ -49,8 +57,8 @@ body {
 }
 
 .programs-container {
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* backdrop-filter: blur(5px); */
     background-image: linear-gradient(0deg, #097417d0, #a3be07c0);
     padding: 1px;
 }
@@ -124,7 +132,7 @@ body {
   position: relative;
   width: 100%;
   height: 1px;
-  background-color: #ffffff56;
+  background-image: linear-gradient(90deg, #888888d0, #ffffff11);
   margin-top: 30px;
 }
 
@@ -183,7 +191,7 @@ body {
 
 
 .headerdiv {
-    background-image: url("banner.png");
+    background-image: url("icons/banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -267,6 +275,16 @@ body {
     object-fit: contain;
 }
 
+.big2-h-wmargin-mwimage {
+    height: 200px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    box-shadow: 0 0 3px 2.8px #eeff00;
+    padding-inline: 7px;
+    padding-block: 7px;
+}
+
 .wide-mwimage {
     height: 155px;
     width: auto;
@@ -279,7 +297,6 @@ body {
     width: auto;
     flex-shrink: 0;
     object-fit: contain;
-    scroll-behavior: smooth;
     box-shadow: 0 0 3px 2.8px #eeff00;
 }
 
@@ -288,7 +305,6 @@ body {
     width: auto;
     flex-shrink: 0;
     object-fit: contain;
-    scroll-behavior: smooth;
     box-shadow: 0 0 5px 2.8px #eeff00;
 }
 
@@ -297,7 +313,6 @@ body {
     width: auto;
     flex-shrink: 0;
     object-fit: contain;
-    scroll-behavior: smooth;
     box-shadow: 0 0 5px 2.8px #eeff00;
     padding-inline: 7px;
     padding-block: 7px;
@@ -308,7 +323,6 @@ body {
     width: auto;
     flex-shrink: 0;
     object-fit: contain;
-    scroll-behavior: smooth;
     box-shadow: 0 0 5px 2.8px #00ccff;
 }
 
@@ -460,6 +474,11 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
       height: auto;
     }
 
+    .big2-h-wmargin-mwimage {
+      width: 300px;
+      height: auto;
+    }
+
     .my-works-container {
         gap: 12px;
         padding: 10px;
@@ -467,6 +486,9 @@ Retrieved 2026-07-07, License - CC BY-SA 3.0
 
     }
 
+    .wiztart-name {
+        font-size: 450%
+    }
 
 }
 
